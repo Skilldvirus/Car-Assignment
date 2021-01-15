@@ -1,0 +1,234 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>ROTORS CARS </title>
+	<meta name="description" content="Motors">
+	<meta name="author" content="Web Domus Italia">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js">
+	</script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/paginationjs/2.1.4/pagination.css" />
+	<link rel="stylesheet" type="text/css" href="style/main.css">
+	<link rel="stylesheet" type="text/css" href="style/mystyle.scss">
+</head>
+
+<body>
+	<!-- Header -->
+	<div class="allcontain">
+		<div class="header">
+
+			<ul class="givusacall">
+				<li>Give us a call : +66666666 </li>
+			</ul>
+		</div>
+		<!-- Navbar Up -->
+
+		<nav class="topnavbar navbar-default topnav">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed toggle-costume" data-toggle="collapse" data-target="#upmenu" aria-expanded="false">
+						<span class="sr-only"> Toggle navigaion</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand logo" href="#">
+						<img src="image/logo1.png" alt="logo">
+					</a>
+				</div>
+			</div>
+			<div class="collapse navbar-collapse" id="upmenu">
+				<ul class="nav navbar-nav" id="navbarontop">
+					<li class="active">
+						<a href="#">Home</a>
+					</li>
+					<li class="active">
+						<a href="#">Our Cars</a>
+					</li>
+					<li class="active">
+						<a href="#">Reviews</a>
+					</li>
+					<li class="active">
+						<a href="#">About</a>
+					</li>
+					<li class="active">
+						<a href="#">Pages</a>
+					</li>
+					<li class="active">
+						<a href="#">Contact Us</a>
+					</li>
+
+				</ul>
+			</div>
+		</nav>
+		<section>
+			<div class="banner-main">
+				<img class="two" src="image/516346.jpg" alt="#" />
+
+			</div>
+		</section>
+	</div>
+	<div class="allcontain">
+		<div class="header1">
+
+			<ul class="givusacall1">
+				<li>Home/Our Cars </li>
+			</ul>
+		</div>
+	</div>
+	<div class="map-options">
+		<div class="map-options__header">
+
+			<span class="header-text">
+				Filters
+			</span>
+
+		</div>
+
+		<div class="map-options__body">
+
+			<div class="slidecontainer">
+				<input type="range" min="50" max="300" value="50" class="slider" id="myRange">
+				<p>Value:
+					<span id="demo"></span>
+				</p>
+			</div>
+
+
+
+			<div class="select-dropdown">
+				<select id="Type">
+					<option value="">All</option>
+					<option value="auto">Auto</option>
+					<option value="manual">Manual</option>
+				</select>
+			</div>
+			<br>
+			<div class="select-dropdown">
+				<select id="Fuel">
+					<option value="">All</option>
+					<option value="Petrol">Petrol</option>
+					<option value="Diesel">Diesel</option>
+					<option value="Hybrid">Hybrid</option>
+				</select>
+			</div>
+			<div>
+				<button id="filterBtn" type="button" class="btn third">Apply filters</button>
+			</div>
+
+		</div>
+
+
+	</div>
+
+	<div class="map-options">
+		<div class="map-options__header">
+
+			<span class="header-text">
+				Sorting
+			</span>
+
+		</div>
+
+		<div class="map-options__body1">
+			<div class="select-dropdown">
+				<select id="optionYear" onchange="sortingHorsePower_Year()">
+					<option value="">Select to Sort </option>
+					<option value="HorsePower">HorsePower</option>
+					<option value="Year">Make Year</option>
+				</select>
+			</div>
+
+
+		</div>
+
+
+	</div>
+
+
+
+	<div id=parent>
+	</div>
+
+
+	<div id=page></div>
+	<!-- Site footer -->
+	<!-- FOOTER START -->
+	<div class="footer">
+		<div class="contain">
+			<div class="col">
+				<h1>Company</h1>
+				<ul>
+					<li>About</li>
+					<li>Mission</li>
+					<li>Services</li>
+					<li>Social</li>
+					<li>Get in touch</li>
+				</ul>
+			</div>
+			<div class="col">
+				<h1>Products</h1>
+				<ul>
+					<li>About</li>
+					<li>Mission</li>
+					<li>Services</li>
+					<li>Social</li>
+					<li>Get in touch</li>
+				</ul>
+			</div>
+			<div class="col">
+				<h1>Accounts</h1>
+				<ul>
+					<li>About</li>
+					<li>Mission</li>
+					<li>Services</li>
+					<li>Social</li>
+					<li>Get in touch</li>
+				</ul>
+			</div>
+			<div class="col">
+				<h1>Resources</h1>
+				<ul>
+					<li>Webmail</li>
+					<li>Redeem code</li>
+					<li>WHOIS lookup</li>
+					<li>Site map</li>
+					<li>Web templates</li>
+					<li>Email templates</li>
+				</ul>
+			</div>
+			<div class="col">
+				<h1>Support</h1>
+				<ul>
+					<li>Contact us</li>
+					<li>Web chat</li>
+					<li>Open ticket</li>
+				</ul>
+			</div>
+			<div class="col social">
+				<h1>Social</h1>
+				<ul>
+					<li>
+						<img src="https://svgshare.com/i/5fq.svg" width="32" style="width: 32px;">
+					</li>
+					<li>
+						<img src="https://svgshare.com/i/5eA.svg" width="32" style="width: 32px;">
+					</li>
+					<li>
+						<img src="https://svgshare.com/i/5f_.svg" width="32" style="width: 32px;">
+					</li>
+				</ul>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="source/js/myscript.js"></script>
+	<script type="text/javascript" src="source/js/pagination.js"></script>
+
+</body>
+
+</html>
